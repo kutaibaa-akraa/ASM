@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<head>
+<title>الحركة الظاهرية للنجوم</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="page2.css" type="text/css">
+<style type="text/css">
+div#total { width: 780px; height: 440px; }
+div#canvas { width: 360px; height: 440px; }
+div#panel { left: 360px; width: 420px; height: 440px; } 
+input[type="text"] { width: 50px; }
+input[type="range"] { width: 400px; }
+select { left: 220px; width: 190px; height: 22px; }
+button { width: 400px; }
+.pos1 { left: 10px; }
+.pos2 { left: 130px; }
+.pos3 { left: 195px; }
+.pos4 { left: 220px; }
+.pos5 { left: 285px; }
+.pos6 { left: 310px; }
+</style>
+<script src="starposition.js"></script>
+<script src="starposition_en.js"></script>
+<script src="page_en.js"></script>
+<meta name="description" content="HTML5 app: Apparent movement of a star">
+<meta name="author" content="Walter Fendt">
+<meta name="keywords" content="app, astronomy, spherical astronomy">
+</head>
+
+<body>
+
+<h1>الحركة الظاهرية للنجوم</h1>
+
+<div id="total" style="margin-top: 20px; margin-bottom: 20px;">
+  <div id="canvas"><canvas id="cvx" width=360 height=440>This browser doesn't support HTML5 canvas!</canvas></div>
+  <div id="panel">
+    <div style="top: 20px;"><span id="ip1a" class="pos1"></span><input id="ip1b" type="text" class="pos2">
+      <span id="ip1c" class="pos3"></span><select id="ip1d"></select></div>
+    <div style="top: 50px;"><span id="ip2a" class="pos1"></span><input id="ip2b" type="text" class="pos2">
+      <span id="ip2c" class="pos3"></span><select id="ip2d"></select></div>
+    <div style="top: 90px;"><span id="ip3a" class="pos1"></span><input id="ip3b" type="text" class="pos4"><span id="ip3c" class="pos3"></span>
+      <input id="ip3d" type="text" class="pos2"><span id="ip3e" class="pos5"></span><input id="ip3f" type="text" class="pos6"></div>
+    <div style="top: 120px;"><span id="ip4a" class="pos1"></span><input id="ip4b" type="text" class="pos2"><span id="ip4c" class="pos3"></span>
+      <input id="ip4d" type="text" class="pos4"><span id="ip4e" class="pos5"></span></div>
+    <div style="top: 160px;"><span id="ip5a" class="pos1"></span><input id="ip5b" type="text" class="pos2">
+      <span id="ip5c" class="pos3"></span></div>
+    <div style="top: 190px;"><span id="ip6a" class="pos1"></span><input id="ip6b" type="text" class="pos2">
+      <span id="ip6c" class="pos3"></span></div>
+    <div style="top: 230px;"><button id="bu1" style="background-color: #00ffff;"></button></div>
+    <div style="top: 270px;"><button id="bu2" style="background-color: #ffff00;"></button></div>
+    <div style="top: 320px;"><span id="ip7a" class="pos1"></span><select id="ip7b"></select></div>
+    <div style="top: 350px;"><input id="ip8" type="range" min=0 max=36 step=1 value=0></div>
+    <div style="top: 380px;"><input id="ip9" type="range" min=0 max=18 step=1 value=0></div>
+    <div style="top: 410px;"><span id="author" class="pos1"></span></div>
+  </div>
+</div>
+
+<script type="text/javascript">endPage("starposition",11,2,1999,25,3,2016);</script>
+
+</body>
+</html>
